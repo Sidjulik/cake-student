@@ -1,28 +1,89 @@
 @font-face {
-    font-family: "playfair_displaybold";
-    src: url("playfairdisplay-bold-webfont.woff2") format("woff2"),
-         url("playfairdisplay-bold-webfont.woff") format("woff");
+font-family: 'Circe';
+font-style: normal;
+font-weight: normal;
+src: local('Circe'), url('CRC55.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Playfair Display Bold';
+font-style: normal;
+font-weight: normal;
+src: local('Playfair Display Bold'), url('PlayfairDisplay-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: "intro_script_rh2_base";
+    src: url('introscriptr-h2base-webfont.woff2') format('woff2'),
+         url('introscriptr-h2base-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+
 }
 
-@font-face {
-  font-family: "Conv_Circle-Regular";
-  src: url("fonts/Circle-Regular.eot");
-  src: local("☺"), url("fonts/Circle-Regular.woff") format("woff"),
-                   url("fonts/Circle-Regular.ttf") format("truetype"),
-                   url("fonts/Circle-Regular.svg") format("svg");
-  font-weight: normal;
-  font-style: normal;
+@base-color: #fbebea;
+@button-color: #f50049;
+
+body {
+  margin: 0;
+  padding: 0;
+
+  background: @base-color;
+  font-family: "Circe", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: auto;
+  width: 320px;
+  min-height: 6545px;
 }
 
-@font-face {
-  font-family: "Conv_IntroScriptR-Base";
-  src: url("fonts/IntroScriptR-Base.eot");
-  src: local("☺"), url("fonts/IntroScriptR-Base.woff") format("woff"),
-                   url("fonts/IntroScriptR-Base.ttf") format("truetype"),
-                   url("fonts/IntroScriptR-Base.svg") format("svg");
-  font-weight: normal;
-  font-style: normal;
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+
+header {
+  background-color: #ffffff;
+  a {
+    color: #000000;
+  }
+}
+
+.benefit {
+  background-image: url("../img/cake%20background.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  h1 {
+    font-family: "Playfair Display Bold", "Time New Roman", serif;
+    font-size: 40px;
+    line-height: 36px;
+  }
+  .benefit__intro {
+    font-family: "intro_script_rh2_base", Arial, sans-serif;
+    font-size: 22px;
+    line-height: 78px;
+  }
+
+  button {
+    background-color: @button-color;
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 27px;
+    border: none;
+    border-radius: 30px;
+    padding: 15px 65px;
+    text-transform: uppercase;
+    font-weight: 500;
+    &:hover {
+      box-shadow: 0 7px 15px 1px fadeout(@button-color, 70%);
+    }
+  }
+  h2 {
+
+  }
 }
 
