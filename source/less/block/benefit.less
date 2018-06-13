@@ -1,0 +1,31 @@
+.benefit {
+  background-image: url("../img/cake%20background.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  h1 {
+    font-family: "Playfair Display Bold", "Time New Roman", serif;
+    font-size: 40px;
+    line-height: 36px;
+  }
+
+  button {
+    background-color: @button-color;
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 27px;
+    border: none;
+    border-radius: 30px;
+    padding: 15px 65px;
+    text-transform: uppercase;
+    font-weight: 500;
+    &:active {
+      box-shadow: 0 7px 15px 1px fadeout(@button-color, 70%);
+    }
+  }
+}
+
+.benefit__intro {
+  font-family: "intro_script_rh2_base", Arial, sans-serif;
+  font-size: 22px;
+  line-height: 78px;
+}
