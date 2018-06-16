@@ -10,19 +10,21 @@
 
 <body>
   <header class="page-header">
-    <img class="page-header__logo" src="../img/cakes.svg" width="47" height="13" alt="Cakes">
+    <div class="page-header__burger">
+      <input type="checkbox" id="check-menu">
+      <label for="check-menu"><img class="page-header__logo" src="../img/cakes.svg" width="47" height="13" alt="Cakes"></label>
+      <div class="burger-line first"></div>
+      <div class="burger-line second"></div>
+      <div class="burger-line third"></div>
+      <div class="burger-line fourth"></div>
+    </div>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a href="#">Наши торты</a></li>
-          <li class="site-list__item site-list__item--active"><a>Индивидуальный заказ</a></li>
-          <li class="site-list__item"><a href="#">Отзывы</a></li>
-          <li class="site-list__item"><a href="#">О нас</a></li>
-          <li class="site-list__item"><a href="#">Как заказать</a></li>
-          <li class="site-list__item"><a href="#">Контакты</a></li>
-        </ul>
-      </div>
+      <a class="main-nav__item href="#">Наши торты</a>
+      <a class="main-nav__item main-nav__item--active">Индивидуальный заказ</a>
+      <a class="main-nav__item href="#">Отзывы</a>
+      <a class="main-nav__item href="#">О нас</a>
+      <a class="main-nav__item href="#">Как заказать</a>
+      <a class="main-nav__item href="#">Контакты</a>
     </nav>
   </header>
   <main class="page-main">
@@ -92,7 +94,7 @@
               <img class="size__image" src="../img/circle1.svg" width="110" height="110" alt="17-18 см">
               <p class="size__text">17-18 см (1 кг – 6 персон)</p>
             </div>
-          <!--  <div class="slider__item size">
+            <!--  <div class="slider__item size">
               <img class="size__image" src="http://placehold.it/154x154" width="154" height="154" alt="23-24 см">
               <p class="size__text">23-24 см (10–12 персон)</p>
             </div>
@@ -121,7 +123,7 @@
               <img class="decor__image" src="../img/photo%20design.jpg" width="177" height="204" alt="Маршмэллоу">
               <p class="decor__name">Маршмэллоу</p>
             </div>
-        <!--    <div class="slider__item decor">
+            <!--    <div class="slider__item decor">
               <img class="decor__image" src="http://placehold.it/177x204" width="177" height="204" alt="Ягодное ассорти">
               <p class="decor__name">Ягодное ассорти</p>
             </div>-->
