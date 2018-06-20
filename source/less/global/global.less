@@ -3,22 +3,31 @@
 }
   @base-color: #fbebea;
   @button-color: #f50049;
+  @text-gray: #2e2829;
 
 body {
-  margin: 0;
-  padding: 0;
-
-  background: @base-color;
+  margin: 0 auto;
+  color: @text-gray;
+  background-color: #f1f1f1;
   font-family: "Circe",  Arial, sans-serif;
   font-size: 14px;
   font-weight: 500;
   width: 320px;
 }
 
+main {
+background-color: @base-color;
+}
+
 a {
   text-decoration: none;
+}
+
+ul {
+  padding: 0;
 }
 
 li {
   list-style: none;
 }
+
