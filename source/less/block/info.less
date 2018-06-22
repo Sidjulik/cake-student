@@ -1,17 +1,65 @@
+.info {
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+
+.reviews {
+  margin: 30px auto;
+  width: 245px;
+  text-align: center;
+}
+.reviews__customer-name {
+  font-size: 12px;
+  b {
+    font-size: 14px;
+  }
+}
+.reviews__customer-text {
+  font-size: 12px;
+  span {
+    color: @button-color;
+  }
+}
+.reviews__open-btn {
+  color: @button-color;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  text-decoration: underline;
+  &:active {
+    color: lighten(@button-color, 20%)
+  }
+}
+
 .reviews__title {
   font-family: "Playfair Display Bold", "Time New Roman", serif;
   font-size: 24px;
-  line-height: 65px;
+  line-height: 24px;
 }
 .info__title {
   font-family: "Playfair Display Bold", "Time New Roman", serif;
   font-size: 24px;
   line-height: 33px;
 }
+.about-us {
+  text-align: center;
+}
+.about-us__subtitle {
+  font-size: 22px;
+  font-family: "IntroScriptR-H2Base", "Arial", sans-serif;
+  font-weight: 500;
+}
+.about-us__text {
+  width: 285px;
+  font-size: 14px;
+  font-weight: 500;
+}
 .about-us__speech {
   font-family: "PlayfairDisplay-BoldItalic", "Time New Roman", cursive;
   font-size: 13px;
   line-height: 13px;
+  text-align: center;
 }
 .advantagest__subtitle {
   font-family: "IntroScriptR-H2Base", "Arial", sans-serif;
