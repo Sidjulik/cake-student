@@ -13,16 +13,31 @@
   line-height: 24px;
   text-align: center;
 }
+.how-order__list {
+  padding: 0;
+}
 .how-oder__item {
-  list-style-type: decimal;
+  list-style-type: none;
+  counter-increment: list;
   font-family: "Playfair Display Bold", "Time New Roman", serif;
   font-size: 35px;
+
 }
+.how-oder__item::before {
+  content: counter(list) "";
+
+}
+
 .how-order__subtitle {
+  margin: 0;
+
+  width: 225px;
   font-family: "Circe",  Arial, sans-serif;
   font-size: 15px;
 }
 .how-order__text {
+  margin: 0;
+  width: 225px;
   font-family: "Circe",  Arial, sans-serif;
   font-size: 14px;
 }

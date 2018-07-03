@@ -10,6 +10,7 @@
   text-align: center;
 }
 .advantages__item {
+  position: relative;
   background-color: white;
   padding: 20px 30px;
   text-align: center;
@@ -19,7 +20,28 @@
   line-height: 27px;
   margin-top: 70px;
 }
+.advantages__slogan:first-child::before {
+  position: absolute;
+  width: 61px;
+  height: 61px;
+  left: 40%;
+  top: 20px;
+  background-image: url(../img/advantages%20icon1.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  content: '';
+}
+.advantages__slogan:last-child::before {
+  position: absolute;
+  width: 84px;
+  height: 50px;
+  left: 40%;
+  top: 20px;
+  background-image: url(../img/advantages%20icon2.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  content: '';
+}
 .advantages__text {
-
   width: 262px;
 }

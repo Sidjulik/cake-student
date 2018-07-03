@@ -1,4 +1,6 @@
 .benefit {
+  position: relative;
+
   background-image: url("../img/cake%20background.png");
   background-position: top center;
   background-repeat: no-repeat;
@@ -39,7 +41,25 @@
 }
 
 .benefit__slogan {
+
   margin-left: 60px;
   margin-right: 60px;
   color: #000000;
+}
+
+.benefit__slogan::before {
+
+  position: absolute;
+  left: 25px;
+  top: 150px;
+
+
+
+  width: 35px;
+  height: 35px;
+  background-image: url("../img/ingredients%20icon.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  content: " ";
+
 }
