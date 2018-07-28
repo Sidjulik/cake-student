@@ -15,21 +15,21 @@
 }
 .how-order__list {
   padding: 0;
-}
-.how-oder__item {
   list-style-type: none;
-  counter-increment: list;
-  font-family: "Playfair Display Bold", "Time New Roman", serif;
-  font-size: 35px;
-
+  counter-reset: num;
 }
 .how-oder__item::before {
-  content: counter(list) "";
-
+  content: counter(num);
+  counter-increment: num;
+  font-family: "Playfair Display Bold", "Time New Roman", serif;
+  font-size: 35px;
 }
 
 .how-order__subtitle {
   margin: 0;
+  margin-left: 30px;
+  margin-bottom: 5px;
+  margin-top: -25px;
 
   width: 225px;
   font-family: "Circe",  Arial, sans-serif;
@@ -37,6 +37,7 @@
 }
 .how-order__text {
   margin: 0;
+  margin-left: 30px;
   width: 225px;
   font-family: "Circe",  Arial, sans-serif;
   font-size: 14px;
