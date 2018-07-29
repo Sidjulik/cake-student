@@ -4,26 +4,25 @@
 <head>
   <meta charset="UTF-8">
   <title>Торты на заказ</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <!--<link rel="stylesheet" href="../css/normalize.css">-->
+  <script src="../js/script.js"></script>
 </head>
 
 <body>
-  <header class="page-header">
-    <input type="checkbox" id="check-menu">
-    <label for="check-menu"><img class="page-header__logo" src="../img/cakes.svg" width="47" height="13" alt="Cakes"></label>
-    <div class="page-header__burger-line first"></div>
-    <div class="page-header__burger-line second"></div>
-    <div class="page-header__burger-line third"></div>
-    <div class="page-header__burger-line fourth"></div>
-    <nav class="page-header__main-nav main-nav">
+  <header class="page-header">    
+    <label><img class="page-header__logo" src="../img/cakes.svg" width="47" height="13" alt="Cakes"></label>
+    <div class="main-nav__icon" id="openMenu">&#9776;</div>
+    <nav class="page-header__main-nav main-nav" id="menu">
       <a class="main-nav__item" href=" #">Наши торты</a>
       <a class="main-nav__item main-nav__item--active">Индивидуальный заказ</a>
       <a class="main-nav__item" href="#">Отзывы</a>
       <a class="main-nav__item" href="#">О нас</a>
       <a class="main-nav__item" href="#">Как заказать</a>
       <a class="main-nav__item" href="#">Контакты</a>
-    </nav>
+    </nav>   
+    
+   
   </header>
   <main class="page-main">
     <section class="page-main__benefit benefit">
