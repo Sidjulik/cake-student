@@ -32,14 +32,10 @@ header {
   width: 320px;
   height: 246px;
   top: 0;
-  transition: all ease 1s;
   overflow: hidden;
-  display: none;
   }
-.main-nav.active {
-  display: block;
-}
- 
+
+
 .main-nav__icon {
   cursor: pointer;
   padding: 0;
@@ -50,13 +46,22 @@ header {
   width: 15px;
   font-size: 22px;
   background-color: white;
-  border: none; 
+  border: none;
  }
 
-@media (min-width: @tablet-width) {
-  
-  .main-nav__icon {
-   
+@media (max-width: @tablet-width) {
+  .main-nav {
+    display: none;
+
+
+  }
+  .main-nav.active {
+    display: block;
+
+
+  }
+  .main-nav__item {
+    display: block;
   }
 
 
