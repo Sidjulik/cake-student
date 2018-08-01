@@ -8,3 +8,10 @@ window.onload = function () {
     }
 	}
 }
+window.onload = function () {
+  var toggle = document.querySelector('.page-header__toggle');
+
+  toggle.addEventListener('click', function(e) {
+    this.classList.toggle('opened')
+  })
+}
