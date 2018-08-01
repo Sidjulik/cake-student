@@ -6,13 +6,11 @@
   <title>Торты на заказ</title>
   <link rel="stylesheet" href="../css/style.css">
   <!--<link rel="stylesheet" href="../css/normalize.css">-->
-  <script src="../js/script.js"></script>
 </head>
 
 <body>
   <header class="page-header">
     <label><img class="page-header__logo" src="../img/cakes.png" width="47" height="13" alt="Cakes"></label>
-    <!-- <div class="page-header__icon" id="openMenu">&#9776;</div> -->
     <button class="page-header__toggle"  id="openMenu">
       <span class="page-header__bar-top"></span>
       <span class="page-header__bar-mid"></span>
@@ -380,6 +378,23 @@
     </ul>
     <p class="page-footer__copyright">©  2018 Cakes</p>
   </footer>
+<script>
+  var link = document.querySelector(".page-header__toggle");
+  var popup = document.querySelector(".main-nav");
+  var toggle = document.querySelector('.page-header__toggle');
+
+
+  link.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.toggle("active");
+  });
+
+  toggle.addEventListener('click', function(e) {
+    this.classList.toggle('opened')
+  });
+
+
+</script>
 </body>
 
 </html>
