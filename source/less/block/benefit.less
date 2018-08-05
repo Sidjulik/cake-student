@@ -1,6 +1,5 @@
 .benefit {
   position: relative;
-
   background-image: url("../img/cake%20background.png");
   background-position: top center;
   background-repeat: no-repeat;
@@ -33,15 +32,17 @@
 }
 
 .benefit__intro {
+  margin: 0;
+  margin-top: 10px;
   font-family: "IntroScriptR-H2Base", Arial, sans-serif;
   font-size: 22px;
-  line-height: 15px;
+  line-height: 22px;
   color: @text-gray;
   text-align: center;
   font-weight: 500;
 }
 
-.benefit__slogan {
+.benefit__slogan {  
   margin-left: 60px;
   margin-right: 60px;
   margin-bottom: 25px;
@@ -72,3 +73,86 @@
   content: " ";
 
 }
+
+@media (min-width: @tablet-width) {
+  .benefit {
+    padding-left: 45px; 
+    padding-right: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  h1 {
+    margin: 0;
+    font-size: 60px;
+    width: 275px;
+    text-align: left;
+  }
+  button {
+    margin: 0;
+    margin-top: 40px;
+    &:hover {
+      box-shadow: 0 7px 15px 1px fadeout(@button-color, 70%);
+    }
+  }
+}
+.benefit__intro {
+  font-size: 36px;
+  line-height: 36px;
+}
+  
+.benefit__slogans {
+  margin-top: 160px;
+  display: flex;
+  order: 1;
+}
+.benefit__slogan {
+  width: 165px;
+}
+.benefit__slogan::before {
+  left: 40px;
+  top: 627px;
+  width: 55px;
+  height: 55px;
+  background-image: url("../img/ingredienticon768.png");
+}
+.benefit__slogan::after {
+  left: 323px;
+  top: 627px;
+  width: 55px;
+  height: 55px;
+  background-image: url("../img/deliveryicon768.png");
+
+}
+.assortment {
+  order: 2;
+}
+}
+
+@media (min-width: @desktop-width) {
+  .benefit {
+    padding-left: 75px; 
+    padding-right: 75px;
+      h1 {
+        font-size: 79px;
+        width: 356px;
+      }
+  }
+  .benefit__intro {
+  font-size: 41px;
+  line-height: 41px;
+  }
+  .benefit__slogan::before {
+  left: 70px;
+  top: 685px;
+  background-image: url("../img/ingredienticon768.png");
+}
+.benefit__slogan::after {
+  left: 353px;
+  top: 685px;
+  background-image: url("../img/deliveryicon768.png");
+
+}
+
+}
+
+

@@ -20,27 +20,12 @@ header {
 }
 .page-header__logo {
   margin-top: 13px;
-
-
 }
 
 .main-nav__item {
   text-align: center;
   font-family: "CRC55.woff", "Arial", sans-serif;
 }
-
-/* .page-header__icon {
-  cursor: pointer;
-  padding: 0;
-  position: absolute;
-  top: 5px;
-  right: 20px;
-  width: 15px;
-  font-size: 22px;
-  background-color: white;
-  border: none;
- } */
-
 
 .page-header__toggle {
   position: absolute;
@@ -60,15 +45,15 @@ header {
   background: black;
   display: block;
   border-radius: 8px;
-  height: 3px;
+  height: 2px;
   width: 29px;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
   transform: rotate(0deg);
   transition: .2s ease all;
 }
 .opened .page-header__bar-top {
   transform: rotate(45deg);
-  transform-origin: 15% 15%;
+  transform-origin: 10% 10%;
 }
 
 .page-header__bar-bot {
@@ -80,7 +65,7 @@ header {
 }
 .opened .page-header__bar-bot {
   transform: rotate(-45deg);
-  transform-origin: 15% 95%;
+  transform-origin: 10% 95%;
 }
 .main-nav {
   margin: 0 auto;
@@ -93,9 +78,6 @@ header {
   overflow: hidden;
   display: none;
   }
-
-
-
 #menu.active {
   display: block;
 }
@@ -125,15 +107,52 @@ header {
     justify-content: space-between;
   }
   .page-header__toggle {
-    left: 117px;
-    top: 27px;
+    left: 120px;
+    top: 29px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .page-header {
+    display: flex;
     width: 1226px;
     height: 90px;
     background-color: @base-color;
+    align-items: flex-end;
+    justify-content: flex-start;
+      }
+  .page-header__toggle {
+    display: none;
   }
+  .page-header__logo {
+    margin: 0;
+    margin-bottom: 11px;
+  }
+  .main-nav {
+    margin: 0;
+    display: flex;
+    width: 950px;
+    height: 45px;
+    position: static;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .main-nav__item { 
+    width: auto;
+    margin-left: 40px;
+    padding: 0;
+    color: #2e2829;
+    font-size: 13px;
+    border: none;
+    background-color: @base-color;
+  }
+  .main-nav__item:hover {
+    color: @button-color;
+  }
+  .main-nav__item--active {
+    color: @button-color;
+  }
+ 
+
+
 }
