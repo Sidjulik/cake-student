@@ -17,27 +17,33 @@
 }
 .assortment__item-classic {
   width: 280px;
-  background-image: url(../img/classic%20photo.jpg);
+  background-image: url(../img/classicphoto.jpg);
+  background-repeat: no-repeat;
 }
 .assortment__item-mousseous {
   width: 280px;
-  background-image: url(../img/mousseous%20photos.jpg);
+  background-image: url(../img/mousseousphotos.jpg);
+  background-repeat: no-repeat;
 }
 .assortment__item-wedding {
   width: 280px;
-  background-image: url(../img/wedding%20photos.jpg);
+  background-image: url(../img/weddingphotos.jpg);
+  background-repeat: no-repeat;
 }
 .assortment__item-mens {
   width: 280px;
-  background-image: url(../img/men%27s%20photos.jpg);
+  background-image: url(../img/mensphotos.jpg);
+  background-repeat: no-repeat;
 }
 .assortment__item-women {
   width: 280px;
-  background-image: url(../img/women%20photos.jpg);
+  background-image: url(../img/womenphotos.jpg);
+  background-repeat: no-repeat;
 }
 .assortment__item-children {
   width: 280px;
-  background-image: url(../img/children%20photo.jpg);
+  background-image: url(../img/childrenphoto.jpg);
+  background-repeat: no-repeat;
 }
 .assortment__subtitle {
   margin: 0;
@@ -49,4 +55,69 @@
   font-size: 12px;
   line-height: 10px;
 }
+@media (min-width: @tablet-width) {
+  .assortment {
+    padding-left: -25px;
+    padding-right: -25px;
+  }
+  .assortment__title {
+    font-size: 28px;
+    text-align: left;
+  }
+  .assortment__list {
+    height: 830px;
 
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: stretch;
+
+
+
+  }
+  .assortment__item {
+    margin-bottom: 20px;
+  }
+  .assortment__item-classic {
+    width: 420px;
+    height: 388px;
+    background-image: url(../img/classicphoto768.jpg);
+  }
+  .assortment__item-mousseous {
+    margin-left: 20px;
+    order: 3;
+    width: 288px;
+    height: 184px;
+    background-image: url(../img/mousseousphotos768.jpg);
+  }
+  .assortment__item-wedding {
+    margin-left: 20px;
+    order: 4;
+    width: 288px;
+    height: 184px;
+    background-image: url(../img/weddingphotos768.jpg);
+  }
+  .assortment__item-mens {
+    width: 288px;
+    height: 184px;
+    background-image: url(../img/mensphotos768.jpg);
+  }
+  .assortment__item-women {
+
+    width: 288px;
+    height: 184px;
+    background-image: url(../img/womenphotos768.jpg);
+  }
+  .assortment__item-children {
+    margin-left: -110px;
+    order: 5;
+    width: 419px;
+    height: 388px;
+    background-image: url(../img/childrenphoto768.jpg);
+    background-position: left -9px top 0;
+  }
+
+
+
+}
