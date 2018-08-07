@@ -1,6 +1,6 @@
 .filling__name {
   font-size: 16px;
-  line-height: 12px;
+  line-height: 16px;
 }
 .filling__text {
   font-size: 14px;
@@ -13,4 +13,39 @@
   line-height: 18px;
   margin: 20px 0;
   text-align: center;
+}
+@media (min-width: @tablet-width) {
+  .filling {
+    display: flex;
+    width: 450px;
+    height: 270px;
+    justify-content: space-between;
+
+  }
+  .filling__image {
+    flex-grow: 5;
+
+  }
+  .filling__name {
+    font-size: 18px;
+    line-height: 18px;
+  }
+  .filling__price {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+}
+@media (min-width: @desktop-width) {
+  .filling__name {
+    font-size: 20px;
+    line-height: 20px;
+  }.filling__text {
+    font-size: 18px;
+    line-height: 18px;
+  }
+  .filling__price {
+    font-size: 22px;
+    line-height: 22px;
+  }
 }

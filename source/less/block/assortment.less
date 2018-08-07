@@ -53,31 +53,28 @@
 .quantity {
   color: #6c6869;
   font-size: 12px;
-  line-height: 10px;
+  line-height: 12px;
 }
 @media (min-width: @tablet-width) {
   .assortment {
-    padding-left: -25px;
-    padding-right: -25px;
+    width: 731px;
   }
   .assortment__title {
     font-size: 28px;
     text-align: left;
   }
   .assortment__list {
+    margin-top: 50px;
     height: 830px;
-
     padding: 0;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: stretch;
-
-
-
   }
   .assortment__item {
     margin-bottom: 20px;
+    padding: 25px;
   }
   .assortment__item-classic {
     width: 420px;
@@ -117,6 +114,73 @@
     background-image: url(../img/childrenphoto768.jpg);
     background-position: left -9px top 0;
   }
+
+}
+@media (min-width: @desktop-width) {
+  .assortment {
+    width: 1227px;
+    margin-top: 135px;
+  }
+  .assortment__title {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .assortment__list {
+    height: 1415px;
+  }
+  .assortment__item {
+    padding: 45px;
+    margin-bottom: 44px;
+  }
+   .assortment__item-classic {
+    width: 695px;
+    height: 652px;
+    background-image: url(../img/classicphoto1366.jpg);
+  }
+  .assortment__item-mousseous {
+    margin-left: 45px;
+    order: 3;
+    width: 484px;
+    height: 304px;
+    background-image: url(../img/mousseousphotos1366.jpg);
+  }
+  .assortment__item-wedding {
+    margin-left: 45px;
+    order: 4;
+    width: 484px;
+    height: 304px;
+    background-image: url(../img/weddingphotos1366.jpg);
+  }
+  .assortment__item-mens {
+    width: 484px;
+    height: 304px;
+    background-image: url(../img/mensphotos1366.jpg);
+  }
+  .assortment__item-women {
+
+    width: 484px;
+    height: 304px;
+    background-image: url(../img/womenphotos1366.jpg);
+  }
+  .assortment__item-children {
+    margin-left: -165px;
+    order: 5;
+    width: 695px;
+    height: 652px;
+    background-image: url(../img/childrenphoto1366.jpg);
+    background-position: left -9px top -1px;
+  }
+  .assortment__subtitle {
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+  .quantity {
+    font-size: 20px;
+    line-height: 20px;
+}
+
+
 
 
 
