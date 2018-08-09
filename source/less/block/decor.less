@@ -8,3 +8,14 @@
 .decor__name {
   font-weight: 500;
 }
+.decor__berries {
+  display: none;
+}
+@media (min-width: @tablet-width) {
+  .decor {
+    justify-content: space-around;
+  }
+  .decor__berries {
+    display: block;
+  }
+}

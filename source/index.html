@@ -11,12 +11,11 @@
 <body>
   <header class="page-header">
     <label><img class="page-header__logo" src="../img/cakes.png" width="47" height="13" alt="Cakes"></label>
-    <button class="page-header__toggle"  id="openMenu">
+    <button class="page-header__toggle" id="openMenu">
       <span class="page-header__bar-top"></span>
       <span class="page-header__bar-mid"></span>
       <span class="page-header__bar-bot"></span>
     </button>
-
     <nav class="page-header__main-nav main-nav" id="menu">
       <a class="main-nav__item" href=" #">Наши торты</a>
       <a class="main-nav__item main-nav__item--active">Индивидуальный заказ</a>
@@ -26,16 +25,14 @@
       <a class="main-nav__item" href="#">Контакты</a>
     </nav>
     <p class="page-header__tel">+7 906 899 92 96</p>
-
-
   </header>
   <main class="page-main">
     <section class="page-main__benefit benefit">
       <h1 class="benefit__title">Торты  на заказ</h1>
       <p class="benefit__intro">Ручная работа</p>
       <div class="benefit__slogans">
-      <p class="benefit__slogan">Натуральные ингредиенты</p>
-      <p class="benefit__slogan">Доставка бесплатно при заказе от 2000 рублей*</p>
+        <p class="benefit__slogan">Натуральные ингредиенты</p>
+        <p class="benefit__slogan">Доставка бесплатно при заказе от 2000 рублей*</p>
       </div>
       <button class="benefit__choose" type="button">Выбрать торт</button>
       <div class="benefit__assortment assortment">
@@ -88,7 +85,7 @@
             </p>
             <div class="filling__description">
               <b class="filling__name">Шоколадный ганаш</b>
-              <p class="filling__text">Ароматный шоколадный бисквит, густой   шоколадный крем – самый шоколадный из всех возможных десертов!</p>
+              <p class="filling__text">Ароматный шоколадный бисквит, густой шоколадный крем – самый шоколадный из всех возможных десертов!</p>
               <p class="filling__price"><b>1000 руб/кг</b></p>
               <button class="order__choose">Выбрать</button>
             </div>
@@ -102,7 +99,7 @@
           <div class="order__content slider__list">
             <div class="slider__item size">
               <div class="size__hover--17">
-              <img class="size__image size__image--17" src="../img/circle1.png" width="110" height="110" alt="17-18 см">
+                <img class="size__image size__image--17" src="../img/circle1.png" width="110" height="110" alt="17-18 см">
               </div>
               <p class="order__toggles slider__toggles">
                 <button class="slider__toggle" type="button">1</button>
@@ -114,31 +111,33 @@
             </div>
             <div class="slider__item size">
               <div class="size__hover--23">
-              <img class="size__image size__image--23" src="../img/circle2.png" width="107" height="107" alt="23-24 см">
+                <img class="size__image size__image--23" src="../img/circle2.png" width="107" height="107" alt="23-24 см">
               </div>
               <p class="size__text size__text--23">23-24 см (10–12 персон)</p>
             </div>
             <div class="slider__item size">
               <div class="size__hover--25">
-              <img class="size__image size__image--25" src="../img/circle3.png" width="120" height="121" alt="25 и 20 см">
+                <img class="size__image size__image--25" src="../img/circle3.png" width="120" height="121" alt="25 и 20 см">
               </div>
               <p class="size__text size__text--25">Два яруса 25 и 20 см (15–20 персон)</p>
             </div>
             <div class="slider__item size">
               <div class="size__hover--30">
-              <img class="size__image size__image--30" src="../img/circle4.png" width="139" height="141" alt="30,25 и 18 см">
+                <img class="size__image size__image--30" src="../img/circle4.png" width="139" height="141" alt="30,25 и 18 см">
               </div>
               <p class="size__text size__text--30">Три яруса 30,25 и 18 см (25–30 персон)</p>
             </div>
             <button class="order__choose order__choose--size">Выбрать</button>
           </div>
         </li>
-        <li class="order__item">
-          <span class="order__number">03</span>
-          <h3 class="order__subtitle">Оформление</h3>
-          <div class="order__content slider__list">
+        <li class="order__item order__item--decor">
+          <div class="order__name">
+            <span class="order__number">03</span>
+            <h3 class="order__subtitle">Оформление</h3>
+          </div>
+          <div class="order__content slider__list slider__list--decor">
             <div class="slider__item decor">
-              <img class="decor__image" src="../img/photo%20design.jpg" width="177" height="204" alt="Маршмэллоу">
+              <img class="decor__image" src="../img/marshmallow.jpg" width="177" height="204" alt="Маршмэллоу">
               <p class="order__toggles">
                 <button class="slider__toggle" type="button">1</button>
                 <button class="slider__toggle" type="button">2</button>
@@ -149,27 +148,30 @@
               <p class="decor__name">Маршмэллоу</p>
               <p class="decor__price"><b>600 руб/кг</b></p>
             </div>
-            <!--    <div class="slider__item decor">
-              <img class="decor__image" src="http://placehold.it/177x204" width="177" height="204" alt="Ягодное ассорти">
+            <div class="slider__item decor decor__berries">
+              <img class="decor__image" src="../img/berriesassorti768.jpg" width="177" height="204" alt="Ягодное ассорти">
               <p class="decor__name">Ягодное ассорти</p>
-            </div>-->
+              <p class="decor__price"><b>700 руб/кг</b></p>
+            </div>
           </div>
-          <button class="order__choose">Выбрать</button>
+          <button class="order__choose order__choose--decor">Выбрать</button>
           <form class="order__form form" action="https://echo.htmlacademy.ru" method="post">
             <h2 class="form__title">Ваш выбор</h2>
+            <div class="form__list">
             <p class="form__item">
               <label class="form__name" for="filling">Начинка</label>
               <input class="form__field" type="text" name="filling" id="filling" value="Шоколадный ганаш">
             </p>
             <p class="form__item">
-              <label class="form__name" for="size">Размер</label>
-              <input class="form__field" type="text" name="size" id="size" value="1 кг">
+              <label class="form__name form__name--size" for="size">Размер</label>
+              <input class="form__field form__field--size" type="text" name="size" id="size" value="1 кг">
             </p>
             <p class="form__item">
               <label class="form__name" for="decor">Оформление</label>
               <input class="form__field" type="text" name="decor" id="decor" value="Маршмэллоу">
             </p>
             <button class="form__button">Заказать торт</button>
+            </div>
           </form>
         </li>
       </ul>
@@ -392,15 +394,15 @@
         </a>
       </li>
     </ul>
-    <p class="page-footer__copyright">©  2018 Cakes</p>
+    <p class="page-footer__copyright">© 2018 Cakes</p>
   </footer>
-<script>
+  <script>
   var link = document.querySelector(".page-header__toggle");
   var popup = document.querySelector(".main-nav");
   var toggle = document.querySelector('.page-header__toggle');
 
 
-  link.addEventListener("click", function (evt) {
+  link.addEventListener("click", function(evt) {
     evt.preventDefault();
     popup.classList.toggle("active");
   });
@@ -409,8 +411,7 @@
     this.classList.toggle('opened')
   });
 
-
-</script>
+  </script>
 </body>
 
 </html>

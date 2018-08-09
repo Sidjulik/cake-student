@@ -1,8 +1,34 @@
-.slider__list {
-    display: flex;
-    width: 598px;
-    height: 233px;
-    justify-content: space-between;
-    align-items: flex-end;
-    align-self: flex-end;
+@media (min-width: @tablet-width) {
+  .slider__list {
+      display: flex;
+      width: 598px;
+      justify-content: space-between;
+      align-items: flex-end;
+      align-self: flex-end;
+  }
+  .slider__list--decor {
+    width: 445px;
+  }
+  .slider__list--decor::before {
+    position: absolute;
+    left: 15px;
+    top: 895px;
+    width: 119px;
+    height: 157px;
+    background-image: url("../img/piececake.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    content: " ";
+  }
+
+
+}
+@media (min-width: @desktop-width) {
+  .slider__list {
+    width: 890px;
+
+
+  }
+
+
 }

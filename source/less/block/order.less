@@ -73,6 +73,9 @@
     padding-right: 20px;
 
   }
+  .order__list {
+    position: relative;
+  }
 
   .order__title {
     margin: auto;
@@ -93,7 +96,7 @@
     justify-content: flex-start;
 
   }
-  .order__name{
+  .order__name {
     width: 130px;
   }
 
@@ -114,7 +117,7 @@
     margin: 0;
     &:hover {
     box-shadow: 0 7px 15px 1px fadeout(@button-color, 70%);
-  }
+    }
   }
   .order__choose--size {
     display: none;
@@ -123,6 +126,12 @@
     display: flex;
     flex-direction: column;
 
+  }
+  .order__choose--decor {
+    display: none;
+  }
+  .order__item--decor {
+    flex-direction: column;
   }
 
 
@@ -158,8 +167,9 @@
     line-height: 27px;
   }
   .order__name {
-    width: 170px;
+    width: 150px;
   }
+
 
 
 }
