@@ -49,3 +49,92 @@
     content: '';
   }
 }
+@media (min-width: @tablet-width) {
+  .about-us {
+    margin: 0;
+    padding-right: 48px;
+    padding-left: 48px;
+    display: flex;
+    flex-direction: column;
+  }
+  .about-us__info {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+  }
+  .about-us__title {
+  text-align: left;
+  }
+  .about-us__subtitle {
+    font-size: 26px;
+  }
+  .about-us__text {
+    margin-top: 5px;
+    width: 330px;
+    line-height: 17px;
+  }
+  .about-us__slogan {
+    font-size: 15px;
+  }
+  .about-us__speech {
+    padding-top: 70px;
+    width: 360px;
+    font-size: 14px;
+    line-height: 17px;
+    align-self: center;
+    &::before {
+    left: 47%;
+    top: 455px;
+    font-size: 77px;
+  }
+  &::after {
+    width: 86px;
+    height: 45px;
+    left: 47%;
+    top: 540px;
+    background-image: url(../img/painting768.png);
+  }
+  }
+  .about-us__image {
+   order: 5;
+ } 
+}
+@media (min-width: @desktop-width) {
+  .about-us {
+    padding-right: 75px;
+    padding-left: 75px;
+  }
+  .about-us__subtitle {
+    font-size: 35px;
+  }
+  .about-us__slogan {
+    font-size: 25px;
+  }
+  .about-us__text {
+    width: 560px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .about-us__speech {
+    padding-top: 150px;
+    padding-bottom: 250px;
+    width: 625px;
+    font-size: 25px;
+    line-height: 37px;
+    &::before {
+    left: 48%;
+    top: 630px;
+    font-size: 140px;
+  }
+  &::after {
+    width: 155px;
+    height: 85px;
+    left: 46%;
+    top: 810px;
+    background-image: url(../img/painting1366.png);
+  }
+  }
+
+}
+
+

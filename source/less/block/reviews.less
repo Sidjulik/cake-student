@@ -32,3 +32,75 @@
   font-size: 24px;
   line-height: 24px;
 }
+
+@media (min-width: @tablet-width) {
+  .reviews {
+    width: 415px;
+    position: relative;
+   
+  } 
+
+  .reviews__customer-text {
+    width: 255px;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: left;
+  }
+  .reviews__customer-name {
+    font-size: 14px;
+    line-height: 14px;
+    text-align: left;
+    b {
+      font-size: 16px;
+      line-height: 16px;
+    }
+  }
+  
+  .reviews__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     &::before {
+    position: absolute;
+    width: 768px;
+    height: 80px;
+    left: -176px;
+    top: -30px;
+    background-image: url(../img/flags.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    content: '';
+  }
+
+  }
+  .reviews__toggles {
+    display: none;
+  }
+}
+@media (min-width: @desktop-width) {
+  .reviews {
+    width: 635px;
+  }  
+  .reviews__customer-text {
+    width: 370px;
+    font-size: 19px;
+    line-height: 24px;
+  }
+  .reviews__content:before {
+    width: 1366px;
+    height: 150px;
+    left: -366px;
+    top: -35px;
+    background-image: url(../img/flags1366.png);
+  }
+
+  .reviews__customer-name {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: left;
+    b {
+      font-size: 27px;
+      line-height: 27px;
+    }
+  }
+}
