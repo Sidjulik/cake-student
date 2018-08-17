@@ -2,7 +2,7 @@
     background-color: #e4353b;
     color: white;
     padding: 35px 30px 210px 35px;
-    background-image: url(../img/present%20background.png);
+    background-image: url(../img/presentbackground.png);
     background-repeat: no-repeat;
     background-position: center bottom;
 }
@@ -41,4 +41,35 @@
   width: 225px;
   font-family: "Circe",  Arial, sans-serif;
   font-size: 14px;
+}
+@media (min-width: @tablet-width) {
+  .how-order {
+    padding-right: 45px;
+    background-image: url(../img/presentbackground768.jpg);
+  }
+  .how-order__title {
+    text-align: left;
+    width: 384px;
+    font-size: 28px;
+   }
+  .how-order__subtitle {
+    font-size: 15px;
+  }
+  .how-order__text {
+    width: 266px;
+    font-size: 14px;
+  }
+  .how-order__text-tablet {
+    width: 355px;
+  }
+  .how-oder__item::before {
+    font-size: 36px;
+}
+.how-order {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+}
+
 }
