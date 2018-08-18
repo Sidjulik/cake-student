@@ -18,7 +18,7 @@
 .contact__form {
   text-align: center;
 }
-.contact__form input{
+.contact__form input {
   width: 280px;
   height: 50px;
   border: none;
@@ -28,6 +28,7 @@
 }
 .contact__form input::placeholder {
   color: #d3d3d3;
+
 }
 .contact__form textarea {
   width: 280px;
@@ -36,9 +37,11 @@
   outline: none;
   margin-bottom: 10px;
   padding: 10px;
+  resize: none;
 }
 .contact__form textarea::placeholder {
   color: #d3d3d3;
+
 }
 .contact__btn {
   background-color: @button-color;
@@ -52,10 +55,117 @@
   font-weight: 500;
   outline: none;
   cursor: pointer;
-  &:active {
+  &:active,
+  &:hover {
     box-shadow: 0 7px 15px 1px fadeout(@button-color, 70%);
   }
 }
 .contact__tel {
   width: 250px;
+}
+
+@media (min-width: @tablet-width) {
+  .contact {
+     padding: 5px 45px;
+     display: flex;
+     justify-content: space-between;
+     background-image: url(../img/strawberry768.png);
+     background-repeat: no-repeat;
+     background-position: 317px bottom;
+  }
+  .contact__block-right {
+    padding-top: 115px;
+  }
+  .contact__title {
+    font-size: 28px;
+    text-align: left;
+  }
+  .contact__form {
+    width: 348px;
+    text-align: left;
+  }
+  .contact__form input {
+    padding: 13px;
+    width: 347px;
+  }
+  .contact__form textarea {
+    padding: 13px;
+    margin-bottom: 25px;
+    width: 347px;
+  }
+  .contact__text {
+    width: 260px;
+  }
+  .contact__tel {
+    margin-top: 0;
+  }
+  .contact__btn {
+    margin-bottom: 105px;
+  }
+}
+@media (min-width: @desktop-width) {
+  .contact {
+    padding: 15px 75px;
+    padding-bottom: 200px;
+    background-image: url(../img/strawberry1366.png);
+    background-position: 470px bottom;
+    justify-content: flex-start;
+  }
+  .contact__block {
+    margin-right: 75px;
+  }
+  .contact__title {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+  .contact__subtitle {
+    font-size: 35px;
+  }
+  .contact__text {
+    width: 550px;
+    font-size: 20px;
+  }
+  .contact__block-right {
+    padding-top: 157px;
+  }
+  .contact__form {
+    width: 348px;
+  }
+  .contact__form input {
+    font-size: 20px;
+    padding-bottom: 0;
+    padding-left: 0;
+    width: 550px;
+    background-color: transparent;
+    border-bottom: 1px solid #d3d3d3;
+  }
+  .contact__form textarea {
+    padding-bottom: 0;
+    padding-left: 0;
+    margin-bottom: 25px;
+    height: 50px;
+    width: 550px;
+    background-color: transparent;
+    border-bottom: 1px solid #d3d3d3;
+    font-size: 20px;
+
+  }
+  .contact__form input::placeholder {
+  font-size: 14px;
+}
+.contact__form textarea::placeholder {
+  font-size: 14px;
+  padding-top: 13px;
+ }
+ .contact__btn {
+  margin-top: 30px;
+ }
+ .contact__tel,
+ .contact__mail {
+  font-size: 20px;
+ }
+ .contact__tel {
+  width: 270px;
+ }
+
 }

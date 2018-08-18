@@ -41,11 +41,18 @@
   width: 225px;
   font-family: "Circe",  Arial, sans-serif;
   font-size: 14px;
+  br {
+    display: none;
+  }
 }
 @media (min-width: @tablet-width) {
-  .how-order {
-    padding-right: 45px;
+  .how-order {   
+    padding: 50px 45px 55px 50px; 
     background-image: url(../img/presentbackground768.jpg);
+    background-position: 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
   }
   .how-order__title {
     text-align: left;
@@ -58,18 +65,47 @@
   .how-order__text {
     width: 266px;
     font-size: 14px;
+    br {
+      display: block;
+    }
   }
   .how-order__text-tablet {
     width: 355px;
   }
   .how-oder__item::before {
+    position: relative;
+    left: -6px;
+    bottom: -9px;
     font-size: 36px;
 }
-.how-order {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-
 }
+@media (min-width: @desktop-width) {
+  .how-order {
+    padding: 80px 55px 175px 55px;
+    background-image: url(../img/presentbackground1366.jpg);
+  }
+  .how-order__title {
+    width: 525px;
+    font-size: 40px;
+  }
+  .how-order__subtitle {
+    font-size: 21px;
+  }
+  .how-order__text {
+    width: 415px;
+
+    font-size: 20px;
+  }
+  .how-oder__item::before {
+    position: relative;
+    left: -16px;
+    bottom: -37px;
+    font-size: 64px;
+  }
+  .how-order__text-tablet {
+    width: 480px;
+  }
+
+
 
 }
